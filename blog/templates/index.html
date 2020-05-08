@@ -1,0 +1,17 @@
+{% extends "base.html"%}
+{% block body_block %}
+    <div class="jumbotron">
+        <h1>Welcome to MyBlogs</h1>
+
+    </div>
+    <p>A forum to discuss technology related topic.</p>
+    <div class="alert alert-primary" role="alert">
+        Please be friendly too others
+    </div>
+    <ul class="list_group">
+        <li class="list-group-item"><strong>Blogs: </strong>{{num_blogs}}</li>
+        <li class="list-group-item"><strong>Authors: </strong>{{num_authors}}</li>
+
+    </ul>
+
+{% endblock %}

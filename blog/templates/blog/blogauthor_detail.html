@@ -1,0 +1,13 @@
+{% extends "base.html"%}
+{% block body_block %}
+    <div class="jumbotron">
+        <h1>{{blogauthor.user}}</h1>
+
+    </div>
+    <h4>Bio: </h4>
+    <p>
+        {{blogauthor.bio}}
+
+    </p>
+
+{% endblock %}

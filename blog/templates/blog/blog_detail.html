@@ -1,0 +1,22 @@
+{% extends "base.html"%}
+{% block body_block %}
+    <div class="jumbotron">
+        <h4>Title: {{blog.name}}</h4>
+
+    </div>
+    <h4>Description:</h4>
+    <p><a href="">{{blog.author}}</a></p>
+    <p>{{blog.description}}</p>
+    <p>{{blog.post_date}}</p>
+
+    <h4>Comments</h4>
+
+    {% for comment in blog.blogcomment_set.all%}
+        <hr>
+        <p>{{comment.author}} ({{comment.post_date}})- {{comment.description}}</p>
+        
+
+    {% endfor %}
+
+
+{% endblock %}
